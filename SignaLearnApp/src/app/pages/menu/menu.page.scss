@@ -1,0 +1,71 @@
+ion-toolbar {
+    --background: #8764C2;
+    --color: rgb(27, 3, 3);
+}
+
+ion-content {
+    --background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+ion-card {
+    --background: #8764C2;
+    --color: #9efff0;
+}
+
+ion-card-title {
+    --color: #52ffe4;
+}
+
+ion-card-subtitle {
+    --color: #d1fff8;
+}
+
+ion-item {
+    --padding-start: 0;
+}
+
+#main-content ion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#main-content ion-img {
+    margin: 50px 0;
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+#container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgSL{
+    height: 65px;
+    top: 5%;
+    align-items: start;
+}
+
+.ion-page{
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+        /* Add your background pattern here */
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+}

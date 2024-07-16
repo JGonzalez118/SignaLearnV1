@@ -1,0 +1,161 @@
+.input{
+    font-size: 300;
+    color: #8764c2;
+}
+
+ion-item{
+    --background:#f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+
+.header{
+    margin-top: 95px;
+    margin-bottom: 80px;
+    text-align: center;
+
+    .subtitle{
+        color: white;
+        font-size: 20px;
+        filter: drop-shadow(2px 4px 2px #00000037);
+        margin-top: 30px;
+
+    }
+    .title{
+        color:#312448;
+        font-size: 30px;
+        filter: drop-shadow(5px 10px 4px #00000037);
+    }
+}
+
+.loginLink{
+    display: flex;
+    justify-content: center;
+    //margin-left: 100px;
+    filter: drop-shadow(1px 1px 4px #00000037);
+
+    p{
+        font-size: 0.9rem;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    //margin-left: 140px;
+    filter: drop-shadow(5px 5px 4px #00000037);
+
+}
+
+.img{
+    height: 275px;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 130px;
+    transform: scaleX(-1);
+    filter: 
+        saturate(50%)
+        contrast(80%)
+        brightness(500%)
+        invert(45%)
+        sepia(90%)
+        hue-rotate(585deg)
+        drop-shadow(10px 10px 5px #00000037);
+}
+
+
+/* 
+    !header zig zag con efecto 3d
+.shape{
+    position: absolute;
+    --s: 70px;  //* control the size 
+    --a: 90deg; //* control the angle
+    --d: 20px;  //* the depth
+    height: 100px;
+    width: 100%;
+    background: 
+      conic-gradient(from calc(var(--a)/-2) at 50% calc(100% - var(--d)),
+        #0008,#0000 1deg calc(var(--a) - 1deg),#0004 var(--a) calc(180deg + var(--a)/2),#0008 0) 
+        50%/var(--s) #ffd06c; //* the main color
+    mask: 
+      conic-gradient(from calc(var(--a)/-2) at bottom,
+        #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a)) 50%/var(--s);
+    z-index: -1;
+}
+
+ !header zig zag
+.shape{
+    position: absolute;
+    --a: 120deg; //* control the angle 
+    --s: 100px; //* size of the zig-zag 
+    --b: 35px;  //* control the thickness
+    background: #ffd06c;
+    height: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
+    width: 100%;
+    --_g:var(--s) repeat-x conic-gradient(from calc(var(--a)/-2) at bottom,
+      #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
+    mask: 50% calc(-1*var(--b))/var(--_g) exclude,50%/var(--_g);
+    margin-top: 25px;
+    z-index: -1;
+}
+
+.shapeOffSet{
+    position: absolute;
+    --a: 120deg; //* control the angle 
+    --s: 100px; //* size of the zig-zag 
+    --b: 35px;  //* control the thickness 
+    background: #ffab87;
+    height: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
+    width: 148%;
+    --_g:var(--s) repeat-x conic-gradient(from calc(var(--a)/-2) at bottom,
+      #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
+    mask: 50% calc(-1*var(--b))/var(--_g) exclude,50%/var(--_g);
+    margin-top: 25px;
+    margin-left: -50px;
+    z-index: -1;
+}*/
+
+/* 
+    !header que cubre la letras solamente
+
+.shape{
+    position: absolute;
+    --c: 70px; //* control the curvature (works with percentage) 
+    height: 250px;
+    width: 100%;
+    aspect-ratio: 1;
+    //* you can also update the 60% 
+    mask: radial-gradient(60% var(--c) at 50% var(--c),#0000 calc(100% - 2px),#000) 0 calc(-1*var(--c));
+    background: #ffd06c;
+    z-index: -1;
+}
+*/
+
+.fondo{
+    outline: 8px solid #00000037;
+    bottom: 0%;
+    position: fixed;
+    z-index: -1;
+    height: 700px;
+    width: 412px;
+    background-color: white;
+    vertical-align: bottom;
+}
+
+.shape{
+    position: absolute;
+    --c: 70px; //* control the curvature (works with percentage) 
+    height: 220px;
+    width: 100%;
+    aspect-ratio: 1;
+    //* you can also update the 60% 
+    mask: radial-gradient(60% var(--c) at 50% var(--c),#0000 calc(100% - 2px),#000) 0 calc(-1*var(--c));
+    background: #b7a1d5;
+    z-index: -1;
+}

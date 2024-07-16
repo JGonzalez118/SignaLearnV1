@@ -1,0 +1,83 @@
+<ion-content [fullscreen]="true">
+  <!-- estos div de aqui son para el header
+  que levy no quiso poner, se pueden quitar-->
+  <div class="shape"></div>
+  <div class="shapeOffSet"></div>
+  <div class="fondo"></div>
+
+  <!-- el texto al tope de la pagina-->
+  <div class="header">
+    <ion-title class="title"><strong>¡Bienvenido a SignaLearn!</strong></ion-title>
+    <p class="subtitle"><strong>
+      ¡Crea tu cuenta!</strong></p>
+  </div>
+
+  <form>
+    <div class="ion-pading">
+      
+      <!-- campo para el nombre de usuario--> 
+      <ion-item>
+        <ion-input placeholder="Nombre de Usuario" class="input"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+
+      <!-- campo para el correo-->
+      <ion-item>
+        <ion-input type="email" placeholder="Correo" class="input"></ion-input>
+        <ion-icon name="mail-outline"></ion-icon>
+      </ion-item>
+
+      <!-- campo para la contraseña-->
+      <ion-item>
+        <ion-input type="password" placeholder="Contraseña" class="input"></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+
+      <!-- campo para la edad, se debe buscar una manera de 
+      que chequee que solo entran numeros y no otros caracteres-->
+      <ion-item>
+        <ion-input type="number" min="1" max="99" placeholder="Edad" class="input"></ion-input>
+        <ion-icon name="accessibility-outline"></ion-icon>
+      </ion-item>
+
+      <!-- campo para el genero, permite una entrada de texto
+      pero no se si lo quieran cambiar a un listado o algo así
+      se podría, pero no se como-->
+      <ion-item>
+        <label for="Genero" style="color: #8664c2a5">Ingresa tú género: </label>
+        <select name="Genero" id="genero" style="margin-left: 120px; margin-right: 5px;">
+          <option value="Mujer">Mujer</option>
+          <option value="Hombre">Hombre</option>
+          <option value="Otro">Otro...</option>
+        </select>
+        <ion-icon name="transgender-outline"></ion-icon>
+      </ion-item>
+
+      <!-- boton para registrarse -->
+      <div class="register">
+        <ion-button [routerLink]="['/login']" style="color:white">Registrarse</ion-button>
+      </div>
+
+      <!-- texto enlace que pregunta si ya tienes una cuenta-->
+      <div class="loginLink">
+        <p>Ya tienes una cuenta? <a [routerLink]="['/login']">Inicia sesión</a></p>
+      </div>
+    </div>
+
+      <!-- imagen de lenny-->
+      <div>
+        <ion-img src="assets/img/LENY_ROTATE_2.png" class="img"></ion-img>
+      </div>
+
+    <!-- 
+      !este boton va directamente al home, esta pa moverse nada mas
+      !en la version final no debe estar
+
+    <ion-fab vertical="bottom" horizontal="end" style="margin-bottom:30px ;">
+      <ion-fab-button [routerLink]="['/home']">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab> -->
+
+  </form>
+</ion-content>

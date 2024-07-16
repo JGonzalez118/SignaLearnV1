@@ -1,0 +1,195 @@
+ion-item{
+    --background: #eeeeee;
+}
+
+//boton de las opciones
+.boton{
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+}
+
+//fondo blanco
+.fondo{
+    outline: 8px solid #00000037;
+    bottom: 0%;
+    position: fixed;
+    z-index: -1;
+    height: 900px;
+    width: 412px;
+    background-color: white;
+    vertical-align: bottom;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+}
+
+//bloque para la pregunta
+/* HTML: <div class="ribbon">Your text content</div> */
+.shape {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px #312448;
+    display: flex;
+    position: absolute; 
+    z-index: 99999;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+.shape {
+    --r: .8em; /* control the cutout */
+    
+    border-block: .5em solid #0000;
+    padding-inline: .5em calc(var(--r) + .25em);
+    line-height: 1.8;
+    clip-path: polygon(100% 0,0 0,0 100%,100% 100%,calc(100% - var(--r)) calc(100% - .25em),100% 50%,calc(100% - var(--r)) .25em);
+    background:
+     radial-gradient(.2em 50% at left,#000a,#0000) border-box,
+     #b7a1d5 padding-box; /* the color  */
+    width: fit-content;
+}
+
+//bloque perdon
+.perdon{
+    position: absolute;
+    z-index: 99999;
+    height: 200px;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 22%;
+    filter: brightness(-500%);
+}
+
+.fondo_perdon{
+    position: absolute;
+    z-index: -1;
+    height: 200px;
+    width: 350px;
+    background-color: #b7a1d5;
+    margin-left: 25px;
+    margin-bottom: 350px;   
+    margin-top: 145px;
+    background: linear-gradient(#b7a1d5, #b7a1d5) padding-box,
+              linear-gradient(#8764c2, #497f92) border-box;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+
+.respuesta_perdon_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 380px;
+
+    .respuesta_perdon_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque gracia
+.gracias{
+    position: absolute;
+    z-index: 99999;
+    height: 215px;
+    display: flex;
+    left: 0;
+    right: 0;
+    margin-top: 65px;
+    filter: brightness(-500%);
+}
+
+.fondo_gracias{
+    position: absolute;
+    z-index: -1;
+    height: 200px;
+    width: 350px;
+    background-color: #b7a1d5;
+    margin-left: 25px;
+    margin-bottom: 350px;   
+    margin-top: 60px;
+    background: linear-gradient(#b7a1d5, #b7a1d5) padding-box,
+              linear-gradient(#8764c2, #497f92) border-box;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+
+.respuesta_gracias_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_gracias_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque porfa
+.porfa{
+    position: absolute;
+    z-index: 99999;
+    height: 215px;
+    display: flex;
+    left: 0;
+    right: 0;
+    margin-top: 70px;
+    filter: brightness(-500%);
+}
+
+.fondo_porfa{
+    position: absolute;
+    z-index: -1;
+    height: 200px;
+    width: 350px;
+    background-color: #b7a1d5;
+    margin-left: 25px;
+    margin-bottom: 350px;   
+    margin-top: 60px;
+    background: linear-gradient(#b7a1d5, #b7a1d5) padding-box,
+              linear-gradient(#8764c2, #497f92) border-box;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+
+.respuesta_porfa_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_porfa_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//este boton va al final de la pagina
+.botonConfirmar{
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 90%;
+    display: flex;
+    justify-content:baseline;
+}
+
+.correct {
+    --background: green !important;
+}
+
+.incorrect {
+    --background: red !important;
+}

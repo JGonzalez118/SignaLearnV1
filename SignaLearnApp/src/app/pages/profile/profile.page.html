@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="color:white"> <strong>Perfil de Usuario</strong> </ion-title>
+    <ion-buttons slot="start">
+      <ion-button style="color:white" [routerLink]="['/menu']">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="banner"></div>
+  <div class="fondo"></div>
+  <div class="blank_pfp">
+    <ion-img src="assets/img/LENY_2.png" class="pfp"></ion-img>
+  </div>
+
+  <div class="username">
+      <h2><strong>Pedro</strong></h2>
+  </div>
+  <div class="registro_date">
+    <p>Se unió el: 07/15/2024 </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="stats"><strong>Estadisticas</strong>
+  </div>
+
+  <div class=tablaStats>
+    <table class="stats_tabla">
+      <tr>
+        <th style="background-color:#b7a1d5; color: white;"> <strong>Curso</strong> </th>
+        <th style="background-color:#b7a1d5; color: white;"> <strong>Estado</strong> </th>
+      </tr>
+      <tr>
+          <td> Curso 1 </td>
+          <th> <ion-icon name="square-Outline" ></ion-icon> </th>
+      </tr>
+      <tr>
+        <td> Curso 2 </td>
+        <th> <ion-icon name="square-Outline" ></ion-icon> </th>
+      </tr>
+      <tr>
+        <td> Curso 3 </td>
+        <th> <ion-icon name="square-Outline" ></ion-icon> </th>
+      </tr>
+    </table>
+  </div>
+
+  <ion-button class="logout" [routerLink]="['/home']"><strong>Cerrar Sesión</strong></ion-button>
+
+</ion-content>

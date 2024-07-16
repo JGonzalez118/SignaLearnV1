@@ -1,0 +1,374 @@
+ion-item{
+    --background: #ffffff;
+}
+
+
+
+//fondo blanco
+.fondo{
+    outline: 8px solid #00000037;
+    bottom: 0%;
+    position: fixed;
+    z-index: -1;
+    height: 900px;
+    width: 412px;
+    background-color: white;
+    vertical-align: bottom;
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+}
+
+//bloque para la pregunta
+/* HTML: <div class="ribbon">Your text content</div> */
+.shape {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    position: absolute; 
+    z-index: 99999;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+.shape {
+    --r: .8em; /* control the cutout */
+    
+    border-block: .5em solid #0000;
+    padding-inline: .5em calc(var(--r) + .25em);
+    line-height: 1.8;
+    clip-path: polygon(100% 0,0 0,0 100%,100% 100%,calc(100% - var(--r)) calc(100% - .25em),100% 50%,calc(100% - var(--r)) .25em);
+    background:
+    radial-gradient(.2em 50% at left,#000a,#0000) border-box,
+     #b7a1d5 padding-box; /* the color  */
+    width: fit-content;
+}
+
+
+//bloque para el dia lunes 1
+.Lunes{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 150px;
+    margin-top: 160px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Lunes{
+        position: absolute;
+        z-index: -1;
+        height: 200px; //ajustas la altura
+        width: 350px; //ajustas el ancho
+        background-color: #b7a1d5;
+        margin-left: 25px;
+        margin-bottom: 350px;   
+        margin-top: 145px;
+        background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+                  linear-gradient(#8764c2, #497f92) border-box;
+        border-radius: 20px;
+        border: 5px solid transparent;
+        filter: drop-shadow(5px 5px 4px #00000037);  
+}
+
+
+.respuesta_Lunes_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 380px;
+
+    .respuesta_Lunes_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque para el dia martes 2
+.Martes{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 150px;
+    margin-top: 60px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Martes{
+        position: absolute;
+        z-index: -1;
+        height: 200px; //ajustas la altura
+        width: 350px; //ajustas el ancho
+        background-color: #b7a1d5;
+        margin-left: 25px;
+        margin-bottom: 350px;   
+        margin-top: 45px;
+        background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+                  linear-gradient(#8764c2, #497f92) border-box;
+        border-radius: 20px;
+        border: 5px solid transparent;
+        filter: drop-shadow(5px 5px 4px #00000037);  
+}
+
+
+.respuesta_Martes_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_Martes_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque para el dia miercoles 3
+.Miercoles{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 150px;
+    margin-top: 65px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Miercoles{
+        position: absolute;
+        z-index: -1;
+        height: 200px; //ajustas la altura
+        width: 350px; //ajustas el ancho
+        background-color: #b7a1d5;
+        margin-left: 25px;
+        margin-bottom: 350px;   
+        margin-top: 45px;
+        background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+                  linear-gradient(#8764c2, #497f92) border-box;
+        border-radius: 20px;
+        border: 5px solid transparent;
+        filter: drop-shadow(5px 5px 4px #00000037);  
+}
+
+
+.respuesta_Miercoles_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_Miercoles_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque para el dia jueves 4
+.Jueves{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 150px;
+    margin-top: 65px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Jueves{
+        position: absolute;
+        z-index: -1;
+        height: 200px; //ajustas la altura
+        width: 350px; //ajustas el ancho
+        background-color: #b7a1d5;
+        margin-left: 25px;
+        margin-bottom: 350px;   
+        margin-top: 45px;
+        background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+                  linear-gradient(#8764c2, #497f92) border-box;
+        border-radius: 20px;
+        border: 5px solid transparent;
+        filter: drop-shadow(5px 5px 4px #00000037);  
+}
+
+
+.respuesta_Jueves_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_Jueves_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque para el dia viernes 5
+.Viernes{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 150px;
+    margin-top: 64px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Viernes{
+        position: absolute;
+        z-index: -1;
+        height: 200px; //ajustas la altura
+        width: 350px; //ajustas el ancho
+        background-color: #b7a1d5;
+        margin-left: 25px;
+        margin-bottom: 350px;   
+        margin-top: 45px;
+        background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+                  linear-gradient(#8764c2, #497f92) border-box;
+        border-radius: 20px;
+        border: 5px solid transparent;
+        filter: drop-shadow(5px 5px 4px #00000037);  
+}
+
+
+.respuesta_Viernes_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_Viernes_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque para el dia sabado 6
+.Sábado{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 147px;
+    margin-top: 65px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Sábado{
+        position: absolute;
+        z-index: -1;
+        height: 200px; //ajustas la altura
+        width: 350px; //ajustas el ancho
+        background-color: #b7a1d5;
+        margin-left: 25px;
+        margin-bottom: 350px;   
+        margin-top: 45px;
+        background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+                  linear-gradient(#8764c2, #497f92) border-box;
+        border-radius: 20px;
+        border: 5px solid transparent;
+        filter: drop-shadow(5px 5px 4px #00000037);  
+}
+
+
+.respuesta_Sábado_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_Sábado_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque para el dia sabado 6
+.Domingo{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 147px;
+    margin-top: 65px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Domingo{
+    position: absolute;
+    z-index: -1;
+    height: 200px; //ajustas la altura
+    width: 350px; //ajustas el ancho
+    background-color: #b7a1d5;
+    margin-left: 25px;
+    margin-bottom: 350px;   
+    margin-top: 45px;
+    background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+              linear-gradient(#8764c2, #497f92) border-box;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    filter: drop-shadow(5px 5px 4px #00000037);  
+}
+
+
+.respuesta_Domingo_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_Domingo_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+//----------------------------------------------------------
+//boton de las opciones
+.boton{  
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    --background: var(--ion-color-primary); /* Default button background */
+}
+
+
+//este boton va al final de la pagina
+.botonConfirmar{
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 90%;
+    display: flex;
+    justify-content:baseline;
+    background-color: #8764c2;
+    border-radius: 5px;
+}
+
+.correct {
+    --background: green !important;
+}
+
+.incorrect {
+    --background: red !important;
+}

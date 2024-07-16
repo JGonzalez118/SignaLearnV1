@@ -1,0 +1,109 @@
+.input{
+    font-size: 300;
+    color: #8764c2;
+}
+
+ion-item{
+    --background: #eeeeee;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+
+.header{
+    margin-top: 95px;
+    margin-bottom: 100px;
+    text-align: center;
+
+    .subtitle{
+        color: white;
+        font-size: 20px;
+        filter: drop-shadow(5px 10px 4px #00000037);
+        margin-top: 30px;
+    }
+    .title{
+        color:#312448;
+        font-size: 30px;
+        filter: drop-shadow(10px 10px 4px #00000037);
+    }
+}
+
+.signUpLink{
+    display: flex;
+    justify-content: center;
+    //margin-left: 16px;
+    p{
+        font-size: 0.9rem;
+        filter: drop-shadow(5px 8px 4px #0000004f);
+    }
+    a{
+        text-decoration: none;
+        
+    }
+}
+
+.resetPassword{
+    display: flex;
+    justify-content: center;
+    //margin-left: 16px;
+    a{
+        font-weight: 400;
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    //margin-left: 140px;
+    margin-bottom: 16px;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+/*
+.img{
+    filter: drop-shadow(10px 10px 4px #00000037);
+} */
+
+.img{
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 45px;
+    margin-right: 130px;
+    transform: scaleX(-1);
+    filter: 
+        saturate(50%)
+        contrast(80%)
+        brightness(500%)
+        invert(45%)
+        sepia(90%)
+        hue-rotate(585deg)
+        drop-shadow(10px 10px 4px #00000037);
+}
+
+.fondo{
+    outline: 8px solid #00000037;
+    bottom: 0%;
+    position: fixed;
+    z-index: -1;
+    height: 675px;
+    width: 412px;
+    background-color: white;
+    vertical-align: bottom;
+}
+
+.shape{
+    position: absolute;
+    --c: 70px; //* control the curvature (works with percentage) 
+    height: 220px;
+    width: 100%;
+    aspect-ratio: 1;
+    //* you can also update the 60% 
+    mask: radial-gradient(60% var(--c) at 50% var(--c),#0000 calc(100% - 2px),#000) 0 calc(-1*var(--c));
+    background: #b7a1d5;
+    z-index: -1;
+}
+

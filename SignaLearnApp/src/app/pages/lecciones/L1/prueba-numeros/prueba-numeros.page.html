@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="color: white;">Ejercicio para la leccion 1: numeros </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="fondo"></div>
+  <div class="shape">¿A qué número corresponde la imagen?</div>
+
+  <!-- pregunta numero: 4  -->
+  <div>
+    <ion-img src="assets\images\Leccion 1\Numeros\4.png" class="numero_4"></ion-img>
+  </div>
+  <div class="fondo_num_4"></div>
+
+  <div class="respuesta_num4_Opciones">
+    <ion-list class="respuesta_num4_Lista">
+      <ion-item *ngFor="let option of questions[0].options; let i = index">
+        <ion-button class="boton"
+                    [disabled]="questions[0].selectedIndex !== null"
+                    [ngClass]="{'correct': questions[0].selectedIndex === i && option.correct, 'incorrect': questions[0].selectedIndex === i && !option.correct}"
+                    (click)="selectOption(0, i)">
+          <strong>{{ option.text }}</strong>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+
+    <!-- pregunta numero: 8  -->
+    <div>
+      <ion-img src="assets\images\Leccion 1\Numeros\8.png" class="numero_8"></ion-img>
+    </div>
+    <div class="fondo_num_8"></div>
+  
+    <div class="respuesta_num8_Opciones">
+      <ion-list class="respuesta_num8_Lista">
+        <ion-item *ngFor="let option of questions[1].options; let i = index">
+          <ion-button class="boton"
+                      [disabled]="questions[1].selectedIndex !== null"
+                      [ngClass]="{'correct': questions[1].selectedIndex === i && option.correct, 'incorrect': questions[1].selectedIndex === i && !option.correct}"
+                      (click)="selectOption(1, i)">
+            <strong>{{ option.text }}</strong>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <!-- pregunta numero: 3  -->
+    <div>
+      <ion-img src="assets\images\Leccion 1\Numeros\3.png" class="numero_3"></ion-img>
+    </div>
+    <div class="fondo_num_3"></div>
+  
+    <div class="respuesta_num3_Opciones">
+      <ion-list class="respuesta_num3_Lista">
+        <ion-item *ngFor="let option of questions[2].options; let i = index">
+          <ion-button class="boton"
+                      [disabled]="questions[2].selectedIndex !== null"
+                      [ngClass]="{'correct': questions[2].selectedIndex === i && option.correct, 'incorrect': questions[2].selectedIndex === i && !option.correct}"
+                      (click)="selectOption(2, i)">
+            <strong>{{ option.text }}</strong>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+    </div>
+
+  <!-- este boton va al final de la pagina -->
+  <ion-button [routerLink]="['/menu']" class="botonConfirmar" style="color:white"><strong>Terminar la prueba</strong></ion-button>
+</ion-content>
+

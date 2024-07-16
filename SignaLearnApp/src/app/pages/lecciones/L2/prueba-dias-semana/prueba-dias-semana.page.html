@@ -1,0 +1,151 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="color: rgb(255, 255, 255);">Ejercicio para la leccion: <br>Días de la Semana</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="fondo"></div>
+  <div class="shape">¿A que Día de la Semana le corresponde a la imagen?</div>
+ 
+  
+<!-- BLOQUE PARA EL Dia luenes 1 --> 
+<div>
+  <ion-img src="assets\images\Lección 2\Dias\Lunes.png" class="Lunes"></ion-img>
+</div>
+<div class="fondo_imagen_Lunes"></div>
+
+<div class="respuesta_Lunes_Opciones">
+  <ion-list class="respuesta_Lunes_Lista">
+    <ion-item *ngFor="let option of questions[0].options; let i = index">
+      <ion-button class="boton"
+                  [disabled]="questions[0].selectedIndex !== null"
+                  [ngClass]="{'correct': questions[0].selectedIndex === i && option.correct, 'incorrect': questions[0].selectedIndex === i && !option.correct}"
+                  (click)="selectOption(0, i)">
+        <strong>{{ option.text }}</strong>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</div>
+
+<!-- BLOQUE PARA EL Dia Martes 2 --> 
+<div>
+  <ion-img src="assets\images\Lección 2\Dias\Martes.png" class="Martes"></ion-img>
+</div>
+<div class="fondo_imagen_Martes"></div>
+
+<div class="respuesta_Martes_Opciones">
+  <ion-list class="respuesta_Martes_Lista">
+    <ion-item *ngFor="let option of questions[1].options; let i = index">
+      <ion-button class="boton"
+                  [disabled]="questions[1].selectedIndex !== null"
+                  [ngClass]="{'correct': questions[1].selectedIndex === i && option.correct, 'incorrect': questions[1].selectedIndex === i && !option.correct}"
+                  (click)="selectOption(1, i)">
+        <strong>{{ option.text }}</strong>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</div>
+
+<!-- BLOQUE PARA EL Dia Miercoles 3 --> 
+<div>
+  <ion-img src="assets\images\Lección 2\Dias\Miercoles.png" class="Miercoles"></ion-img>
+</div>
+<div class="fondo_imagen_Miercoles"></div>
+
+<div class="respuesta_Miercoles_Opciones">
+  <ion-list class="respuesta_Miercoles_Lista">
+    <ion-item *ngFor="let option of questions[2].options; let i = index">
+      <ion-button class="boton"
+                  [disabled]="questions[2].selectedIndex !== null"
+                  [ngClass]="{'correct': questions[2].selectedIndex === i && option.correct, 'incorrect': questions[2].selectedIndex === i && !option.correct}"
+                  (click)="selectOption(2, i)">
+        <strong>{{ option.text }}</strong>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</div>
+
+<!-- BLOQUE PARA EL Dia Jueves 4 --> 
+<div>
+  <ion-img src="assets\images\Lección 2\Dias\Jueves.png" class="Jueves"></ion-img>
+</div>
+<div class="fondo_imagen_Jueves"></div>
+
+<div class="respuesta_Jueves_Opciones">
+  <ion-list class="respuesta_Jueves_Lista">
+    <ion-item *ngFor="let option of questions[3].options; let i = index">
+      <ion-button class="boton"
+                  [disabled]="questions[3].selectedIndex !== null"
+                  [ngClass]="{'correct': questions[3].selectedIndex === i && option.correct, 'incorrect': questions[3].selectedIndex === i && !option.correct}"
+                  (click)="selectOption(3, i)">
+        <strong>{{ option.text }}</strong>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</div>
+
+<!-- BLOQUE PARA EL Dia Viernes 5 --> 
+<div>
+  <ion-img src="assets\images\Lección 2\Dias\Viernes.png" class="Viernes"></ion-img>
+</div>
+<div class="fondo_imagen_Viernes"></div>
+
+<div class="respuesta_Viernes_Opciones">
+  <ion-list class="respuesta_Viernes_Lista">
+    <ion-item *ngFor="let option of questions[4].options; let i = index">
+      <ion-button class="boton"
+                  [disabled]="questions[4].selectedIndex !== null"
+                  [ngClass]="{'correct': questions[4].selectedIndex === i && option.correct, 'incorrect': questions[4].selectedIndex === i && !option.correct}"
+                  (click)="selectOption(4, i)">
+        <strong>{{ option.text }}</strong>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</div>
+
+<!-- BLOQUE PARA EL Dia Sabado 6 --> 
+<div>
+  <ion-img src="assets\images\Lección 2\Dias\Sabado.png" class="Sábado"></ion-img>
+</div>
+<div class="fondo_imagen_Sábado"></div>
+
+<div class="respuesta_Sábado_Opciones">
+  <ion-list class="respuesta_Sábado_Lista">
+    <ion-item *ngFor="let option of questions[5].options; let i = index">
+      <ion-button class="boton"
+                  [disabled]="questions[5].selectedIndex !== null"
+                  [ngClass]="{'correct': questions[5].selectedIndex === i && option.correct, 'incorrect': questions[5].selectedIndex === i && !option.correct}"
+                  (click)="selectOption(5, i)">
+        <strong>{{ option.text }}</strong>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</div>
+
+<!-- BLOQUE PARA EL Dia Domingo 5 --> 
+<div>
+  <ion-img src="assets\images\Lección 2\Dias\Domingo.png" class="Domingo"></ion-img>
+</div>
+<div class="fondo_imagen_Domingo"></div>
+
+<div class="respuesta_Domingo_Opciones">
+  <ion-list class="respuesta_Domingo_Lista">
+    <ion-item *ngFor="let option of questions[6].options; let i = index">
+      <ion-button class="boton"
+                  [disabled]="questions[6].selectedIndex !== null"
+                  [ngClass]="{'correct': questions[6].selectedIndex === i && option.correct, 'incorrect': questions[6].selectedIndex === i && !option.correct}"
+                  (click)="selectOption(6, i)">
+        <strong>{{ option.text }}</strong>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</div>
+
+<!-- este boton va al final de la pagina -->
+<ion-button [routerLink]="['/menu']" class="botonConfirmar" style="color:white">
+  <strong>comprobar respuestas</strong>
+</ion-button>
+</ion-content>
+

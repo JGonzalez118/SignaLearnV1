@@ -1,0 +1,122 @@
+.banner {
+    --s: 111px; /* control the size*/
+    --c1: #ffffff;
+    --c2: #b7a1d5;
+    
+    --_g: #0000 8%,var(--c1) 0 17%,#0000 0 58%;
+    background: 
+      linear-gradient(135deg,#0000 20.5%,var(--c1) 0 29.5%,#0000 0) 0 calc(var(--s)/4),
+      linear-gradient( 45deg,var(--_g)) calc(var(--s)/2) 0,
+      linear-gradient(135deg,var(--_g),var(--c1) 0 67%,#0000 0),        
+      linear-gradient( 45deg,var(--_g),var(--c1) 0 67%,#0000 0 83%,var(--c1) 0 92%,#0000 0),
+      var(--c2); 
+    background-size: var(--s) var(--s);
+}
+
+.banner {
+    position: fixed;
+    vertical-align: top;
+    z-index: -1;
+    width: 412px;
+    height: 450px;
+}
+
+//fondo blanco
+.fondo{
+    outline: 8px solid #00000080;
+    bottom: 0%;
+    position: fixed;
+    z-index: -1;
+    height: 650px;
+    width: 412px;
+    background-color: white;
+    vertical-align: bottom;
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+}
+
+//foto de usuario
+.blank_pfp{
+    outline: 8px solid #00000080;
+    background-color: #b7a1d5;
+    height: 200px;
+    width: 150px;
+    position: relative;
+    z-index: -1;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: 20px;   
+}
+
+.pfp {
+    display: flex;
+    justify-content: center;
+    height: 95%;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+
+// resto
+
+.username{
+    margin-top: -45px;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+.registro_date{
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+
+.divider {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
+.stats {
+    padding: 15px;
+    margin-top: 5px;
+    font-size: 1.6rem;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+
+.logout{
+    color:white;
+    margin-left: 20px;
+    margin-top: 420px;
+    margin-bottom: 15px;
+    width: 90%;
+    display: flex;
+    justify-content:baseline;
+    filter: drop-shadow(5px 5px 4px #00000037);
+    z-index: 99999;
+}
+
+.stats_tabla{
+    position: absolute;
+    z-index: -1;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 15px;
+    border-collapse: collapse;
+    border: 3px solid rgb(140 140 140);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    filter: drop-shadow(5px 5px 4px #00000043);
+    
+    tr{
+        border-collapse: collapse;
+        border: 2px solid rgb(140 140 140);
+    }
+}
+
+th, td{
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 8px 10px;
+}

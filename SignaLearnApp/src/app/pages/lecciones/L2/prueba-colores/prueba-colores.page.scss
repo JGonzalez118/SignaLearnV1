@@ -1,0 +1,335 @@
+ion-item{
+    --background: #ffffff;
+}
+
+
+.fondo{
+    outline: 8px solid #00000037;
+    bottom: 0%;
+    position: fixed;
+    z-index: -1;
+    height: 900px;
+    width: 412px;
+    background-color: white;
+    vertical-align: bottom;
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+}
+
+//bloque para la pregunta
+/* HTML: <div class="ribbon">Your text content</div> */
+.shape {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    position: absolute; 
+    z-index: 99999;
+    filter: drop-shadow(5px 5px 4px #00000037);
+}
+.shape {
+    --r: .8em; /* control the cutout */
+    
+    border-block: .5em solid #0000;
+    padding-inline: .5em calc(var(--r) + .25em);
+    line-height: 1.8;
+    clip-path: polygon(100% 0,0 0,0 100%,100% 100%,calc(100% - var(--r)) calc(100% - .25em),100% 50%,calc(100% - var(--r)) .25em);
+    background:
+    radial-gradient(.2em 50% at left,#000a,#0000) border-box,
+     #b7a1d5 padding-box; /* the color  */
+    width: fit-content;
+}
+
+//bloque para el color Amarillo 1
+.Amarillo{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 120px;
+    margin-top: 150px;
+    filter: brightness(-50%);      
+
+}
+
+.fondo_imagen_Amarillo{
+    
+        position: absolute;
+        z-index: -1;
+        height: 200px; //ajustas la altura
+        width: 350px; //ajustas el ancho
+        background-color: #b7a1d5;
+        margin-left: 25px;
+        margin-bottom: 350px;   
+        margin-top: 145px;
+        background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+                  linear-gradient(#8764c2, #497f92) border-box;
+        border-radius: 20px;
+        border: 5px solid transparent;
+        filter: drop-shadow(5px 5px 4px #00000037);      
+}
+
+
+.respuesta_Amarillo_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 380px;
+
+    .respuesta_Amarillo_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque para el color Morado 2
+.Morado{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 127px;
+    margin-top: 50px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Morado{
+    position: absolute;
+    z-index: -1;
+    height: 200px; //ajustas la altura
+    width: 350px; //ajustas el ancho
+    background-color: #b7a1d5;
+    margin-left: 25px;
+    margin-bottom: 350px;   
+    margin-top: 45px;
+    background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+              linear-gradient(#8764c2, #497f92) border-box;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    filter: drop-shadow(5px 5px 4px #00000037);      
+        
+}
+
+
+.respuesta_Morado_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_Morado_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+//bloque para el color Violeta 3
+.Violeta{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 150px;
+    margin-top: 60px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Violeta{
+    position: absolute;
+    z-index: -1;
+    height: 200px; //ajustas la altura
+    width: 350px; //ajustas el ancho
+    background-color: #b7a1d5;
+    margin-left: 25px;
+    margin-bottom: 350px;   
+    margin-top: 45px;
+    background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+              linear-gradient(#8764c2, #497f92) border-box;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    filter: drop-shadow(5px 5px 4px #00000037);      
+}
+
+.respuesta_Violeta_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_Violeta_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque para el color Rojo 4
+.Rojo{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 127px;
+    margin-top: 50px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Rojo{
+    position: absolute;
+        z-index: -1;
+        height: 200px; //ajustas la altura
+        width: 350px; //ajustas el ancho
+        background-color: #b7a1d5;
+        margin-left: 25px;
+        margin-bottom: 150px;   
+        margin-top: 45px;
+        background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+                  linear-gradient(#8764c2, #497f92) border-box;
+        border-radius: 20px;
+        border: 5px solid transparent;
+        filter: drop-shadow(5px 5px 4px #00000037);      
+}
+
+
+
+.respuesta_Rojo_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_Rojo_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque para el color Celeste 5
+.Celeste{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 127px;
+    margin-top: 50px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Celeste{
+    position: absolute;
+        z-index: -1;
+        height: 200px; //ajustas la altura
+        width: 350px; //ajustas el ancho
+        background-color: #b7a1d5;
+        margin-left: 25px;
+        margin-bottom: 350px;   
+        margin-top: 45px;
+        background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+                  linear-gradient(#8764c2, #497f92) border-box;
+        border-radius: 20px;
+        border: 5px solid transparent;
+        filter: drop-shadow(5px 5px 4px #00000037);      
+}
+
+
+.respuesta_Celeste_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_Celeste_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//bloque para el color Verde
+.Verde{
+    position: absolute;
+    z-index: 99999;
+    height: 160px; //tamaño de imagen
+    display: flex;
+    margin-left: 145px;
+    margin-top: 60px;
+    filter: brightness(-50%);
+}
+
+.fondo_imagen_Verde{
+    position: absolute;
+        z-index: -1;
+        height: 200px; //ajustas la altura
+        width: 350px; //ajustas el ancho
+        background-color: #b7a1d5;
+        margin-left: 25px;
+        margin-bottom: 350px;   
+        margin-top: 45px;
+        background: linear-gradient(#b7a1d5,#b7a1d5) padding-box,
+                  linear-gradient(#8764c2, #497f92) border-box;
+        border-radius: 20px;
+        border: 5px solid transparent;
+        filter: drop-shadow(5px 5px 4px #00000037);      
+}
+
+
+.respuesta_Verde_Opciones{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 280px;
+
+    .respuesta_Verde_Lista{
+        background-color: #eeeeee;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//----------------------------------------------------------
+//boton de las opciones
+.boton{
+
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    --background: var(--ion-color-primary); /* Default button background */
+
+}
+
+
+//este boton va al final de la pagina
+.botonContinuar{
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 90%;
+    display: flex;
+    justify-content:baseline;
+    background-color:#8764c2;
+    border-radius: 5px; 
+}
+
+.correct {
+    --background: green !important;
+}
+
+.incorrect {
+    --background: red !important;
+}
+
+

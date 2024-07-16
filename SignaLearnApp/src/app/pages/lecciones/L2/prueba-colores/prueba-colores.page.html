@@ -1,0 +1,130 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="color: rgb(255, 255, 255);">Ejercicio para la lección: Colores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="fondo"></div>
+  <div class="shape">¿A qué color corresponde la imagen?</div>
+  
+  <!-- Pregunta Amarillo -->
+  <div>
+    <ion-img src="assets\images\Lección 2\Colores\Amarillo.png" class="Amarillo"></ion-img>
+  </div>
+  <div class="fondo_imagen_Amarillo"></div>
+
+  <div class="respuesta_Amarillo_Opciones">
+    <ion-list class="respuesta_Amarillo_Lista">
+      <ion-item *ngFor="let option of questions[0].options; let i = index">
+        <ion-button class="boton"
+                    [disabled]="questions[0].selectedIndex !== null"
+                    [ngClass]="{'correct': questions[0].selectedIndex === i && option.correct, 'incorrect': questions[0].selectedIndex === i && !option.correct}"
+                    (click)="selectOption(0, i)">
+          <strong>{{ option.text }}</strong>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <!-- Pregunta Morado -->
+  <div>
+    <ion-img src="assets\images\Lección 2\Colores\Morado.png" class="Morado"></ion-img>
+  </div>
+  <div class="fondo_imagen_Morado"></div>
+
+  <div class="respuesta_Morado_Opciones">
+    <ion-list class="respuesta_Morado_Lista">
+      <ion-item *ngFor="let option of questions[1].options; let i = index">
+        <ion-button class="boton"
+                    [disabled]="questions[1].selectedIndex !== null"
+                    [ngClass]="{'correct': questions[1].selectedIndex === i && option.correct, 'incorrect': questions[1].selectedIndex === i && !option.correct}"
+                    (click)="selectOption(1, i)">
+          <strong>{{ option.text }}</strong>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <!-- Pregunta Violeta -->
+  <div>
+    <ion-img src="assets\images\Lección 2\Colores\violeta.png" class="Violeta"></ion-img>
+  </div>
+  <div class="fondo_imagen_Violeta"></div>
+
+  <div class="respuesta_Violeta_Opciones">
+    <ion-list class="respuesta_Violeta_Lista">
+      <ion-item *ngFor="let option of questions[2].options; let i = index">
+        <ion-button class="boton"
+                    [disabled]="questions[2].selectedIndex !== null"
+                    [ngClass]="{'correct': questions[2].selectedIndex === i && option.correct, 'incorrect': questions[2].selectedIndex === i && !option.correct}"
+                    (click)="selectOption(2, i)">
+          <strong>{{ option.text }}</strong>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <!-- Pregunta Rojo -->
+  <div>
+    <ion-img src="assets\images\Lección 2\Colores\rojo.png" class="Rojo"></ion-img>
+  </div>
+  <div class="fondo_imagen_Rojo"></div>
+
+  <div class="respuesta_Rojo_Opciones">
+    <ion-list class="respuesta_Rojo_Lista">
+      <ion-item *ngFor="let option of questions[3].options; let i = index">
+        <ion-button class="boton"
+                    [disabled]="questions[3].selectedIndex !== null"
+                    [ngClass]="{'correct': questions[3].selectedIndex === i && option.correct, 'incorrect': questions[3].selectedIndex === i && !option.correct}"
+                    (click)="selectOption(3, i)">
+          <strong>{{ option.text }}</strong>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <!-- Pregunta Celeste -->
+  <div>
+    <ion-img src="assets\images\Lección 2\Colores\celeste.png" class="Celeste"></ion-img>
+  </div>
+  <div class="fondo_imagen_Celeste"></div>
+
+  <div class="respuesta_Celeste_Opciones">
+    <ion-list class="respuesta_Celeste_Lista">
+      <ion-item *ngFor="let option of questions[4].options; let i = index">
+        <ion-button class="boton"
+                    [disabled]="questions[4].selectedIndex !== null"
+                    [ngClass]="{'correct': questions[4].selectedIndex === i && option.correct, 'incorrect': questions[4].selectedIndex === i && !option.correct}"
+                    (click)="selectOption(4, i)">
+          <strong>{{ option.text }}</strong>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <!-- Pregunta Verde -->
+  <div>
+    <ion-img src="assets\images\Lección 2\Colores\Verde.png" class="Verde"></ion-img>
+  </div>
+  <div class="fondo_imagen_Verde"></div>
+
+  <div class="respuesta_Verde_Opciones">
+    <ion-list class="respuesta_Verde_Lista">
+      <ion-item *ngFor="let option of questions[5].options; let i = index">
+        <ion-button class="boton"
+                    [disabled]="questions[5].selectedIndex !== null"
+                    [ngClass]="{'correct': questions[5].selectedIndex === i && option.correct, 'incorrect': questions[5].selectedIndex === i && !option.correct}"
+                    (click)="selectOption(5, i)">
+          <strong>{{ option.text }}</strong>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <!-- Botón de Continuar -->
+  <ion-button color="red" class="botonContinuar" style="color:white" routerLink="/prueba-dias-semana">
+    <strong>Continuar</strong>
+  </ion-button>
+</ion-content>

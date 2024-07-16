@@ -1,0 +1,59 @@
+<ion-content [fullscreen]="true">
+  
+  <div class="fondo"></div>
+  <div class="shape"></div>
+  <!-- texto del tope de la screen-->
+  <div class="header">
+    <ion-title class="title"><strong>¡Bienvenido a SignaLearn!</strong></ion-title>
+    <p class="subtitle"><strong>Inicia secion a tu cuenta</strong></p>
+  </div>
+  
+  <form id="loginForm">
+    <div class="ion-pading">
+
+      <!-- campo para el correo-->
+      <ion-item>
+        <ion-input type="email" id="email" placeholder="Correo" class="input"></ion-input>
+        <ion-icon name="mail-outline"></ion-icon>
+      </ion-item>
+      
+      <!-- campo para la contraseña-->
+      <ion-item>
+        <ion-input type="password" id="password" placeholder="Contraseña" class="input"></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+
+      <!-- boton para iniciar la sesión -->
+      <div class="login">
+        <ion-button onClick="login()" style="color:white">Iniciar sesión</ion-button>
+      </div>
+
+      <!-- boton para recuperar contraseña -->
+      <!-- tentativo, se puede borrar si quieren idk--> 
+      <!--div class="resetPassword">
+        <a [routerLink]="['/reset-password']">Olvidaste tu contraseña?</a>
+      </div -->
+
+      <!-- boton para crear una cuenta-->
+      <div class="signUpLink">
+        <p>Eres nuevo? <a [routerLink]="['/signup']">Crea una cuenta!</a></p>
+      </div>
+    </div>
+
+    <!-- imagen de lenny-->
+    <div>
+      <ion-img src="assets/img/LENY_ROTATE_2.png" class="img"></ion-img>
+    </div>
+    
+    <!-- 
+  
+    !este boton va directamente al home, esta pa moverse nada mas
+    !en la version final no debe estar
+
+    <ion-fab vertical="bottom" horizontal="end" style="margin-bottom:30px ;">
+      <ion-fab-button [routerLink]="['/home']">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab> -->
+  </form>
+</ion-content>

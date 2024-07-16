@@ -1,0 +1,51 @@
+ion-content {
+    --background: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+
+  .fondo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+        /* Add your background pattern here */
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+}
+
+  
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  #container img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Estilos para el contenedor principal */
+  #container {
+    display: flex;
+    flex-direction: column; /* Organiza los hijos en columna (uno debajo del otro) */
+    align-items: center;    /* Centra los hijos horizontalmente */
+    justify-content: center; /* Centra los hijos verticalmente dentro del contenedor */
+    height: 100vh;          /* Altura completa de la vista */
+    text-align: center;     /* Centra el texto dentro del contenedor */
+  }
+  
+  .title {
+    font-size: 27px;        /* Ajusta el tamaño de la fuente */
+    font-style:normal;
+    color: #cfc9c9;            /* Color del texto */
+    margin-bottom: 10px;    /* Espacio entre el título y la imagen */
+  }
